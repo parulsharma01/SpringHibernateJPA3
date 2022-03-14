@@ -1,9 +1,9 @@
-package com.ttn.springdata.springdatajpa3;
+package com.parul.springdata.springdatajpa3;
 
-import com.ttn.springdata.springdatajpa3.entities.Address;
-import com.ttn.springdata.springdatajpa3.entities.Author;
-import com.ttn.springdata.springdatajpa3.entities.Book;
-import com.ttn.springdata.springdatajpa3.repos.AuthorRepository;
+import com.parul.springdata.springdatajpa3.entities.Address;
+import com.parul.springdata.springdatajpa3.entities.Author;
+import com.parul.springdata.springdatajpa3.entities.Book;
+import com.parul.springdata.springdatajpa3.repos.AuthorRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,25 +24,21 @@ class Springdatajpa3ApplicationTests {
 	public void testCreateAuthor()
 	{
 		Author author= new Author();
-		author.setName("Alice");
+		author.setName("J K Rowling");
 
 		Set<Book> books=new HashSet<>();
 		Book book=new Book();
-		book.setBookName("Alchemist 2");
+		book.setBookName("Harry Potter");
 		author.addBook(book);
 
 		book=new Book();
-		book.setBookName("A Monk who sold his Bugatti");
-		author.addBook(book);
-
-		book=new Book();
-		book.setBookName("Genius 2020");
+		book.setBookName("An Indian Girl");
 		author.addBook(book);
 
 		Address address=new Address();
-		address.setStreetNumber(4299);
-		address.setLocation("Ujjain");
-		address.setState("MP");
+		address.setStreetNumber(63);
+		address.setLocation("ALwar");
+		address.setState("Rajasthan");
 		author.addAddress(address);
 
 		repository.save(author);

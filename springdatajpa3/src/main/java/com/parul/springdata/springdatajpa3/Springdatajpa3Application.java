@@ -1,4 +1,4 @@
-package com.ttn.springdata.springdatajpa3;
+package com.parul.springdata.springdatajpa3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

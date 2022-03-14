@@ -1,4 +1,4 @@
-package com.ttn.springdata.springdatajpa3.entities;
+package com.parul.springdata.springdatajpa3.entities;
 
 import javax.persistence.*;
 import java.util.HashSet;
